@@ -7,11 +7,7 @@ components:
   properties: {col_widths: '{}'}
   name: column_panel_1
   layout_properties: {slot: default}
-  components:
-  - type: DataRowPanel
-    properties: {}
-    name: data_row_panel_1
-    layout_properties: {grid_position: 'HRJGUD,LZPFZI'}
+  components: []
 - type: ColumnPanel
   properties: {role: null, tooltip: Select the menu item, border: '', foreground: '',
     visible: true, wrap_on: mobile, col_spacing: medium, spacing_above: medium, col_widths: '{}',
