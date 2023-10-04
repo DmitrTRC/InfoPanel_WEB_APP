@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"VHCJEH":10,"BDJBZC":25,"JMTGOF":45}'}
 components:
 - type: RichText
   properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
@@ -15,13 +15,17 @@ components:
     spacing_below: small, italic: false, background: '', bold: false, underline: false,
     icon: ''}
   name: label_location
-  layout_properties: {grid_position: 'UHJEFA,ULAVHV'}
+  layout_properties: {grid_position: 'NXQBDC,VHCJEH'}
 - type: TextBox
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
     border: '', enabled: true, foreground: '', visible: true, text: Колтуши, font_size: null,
     font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
     background: '', bold: false, underline: false}
   name: text_box_1
-  layout_properties: {grid_position: 'IVQDTZ,GGKBVI'}
+  layout_properties: {grid_position: 'NXQBDC,BDJBZC'}
   event_bindings: {pressed_enter: text_box_1_pressed_enter}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_1
+  layout_properties: {grid_position: 'NXQBDC,JMTGOF'}
 is_package: true
