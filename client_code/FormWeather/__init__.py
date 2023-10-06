@@ -20,7 +20,8 @@ class FormWeather(FormWeatherTemplate):
     print(f'Received new location : {self.text_box_1.text}')
     weather_request =  self.weather_url + self.text_box_1.text
     weather_response = rq.request(weather_request)
-    self.text_weather_info.text = weather_response.
+    print(f'Content type = {weather_response.content_type}')
+    self.text_weather_info.text = weather_response.get_bytes()
 
   def text_box_1_focus(self, **event_args):
     """This method is called when the TextBox gets focus"""
