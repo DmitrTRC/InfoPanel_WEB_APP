@@ -19,11 +19,12 @@ class FormWeather(FormWeatherTemplate):
   def get_weather(self):     
     weather_request =  self.weather_url + self.text_box_1.text
     weather_response = rq.request(weather_request)
-    return weather_response
+    return weather_response.get_bytes()
 
   def text_box_1_pressed_enter(self, **event_args):
-    self.text_area_weather.text
-    self.text_area_weather.text = self.get_weather().get_bytes
+    info = self.get_weather()
+    print (f'Raw response: {info}')
+    self.text_area_weather.text = info
 
 
   
