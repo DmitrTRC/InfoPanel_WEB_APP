@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"VHCJEH":15,"BDJBZC":25,"JMTGOF":40}'}
 components:
 - type: RichText
   properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
@@ -9,4 +9,39 @@ components:
     format: markdown}
   name: demo_text
   layout_properties: {grid_position: 'QHTYWK,BDBGLM'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Enter location : ', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_location
+  layout_properties: {grid_position: 'NXQBDC,VHCJEH'}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: Колтуши, font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: '', bold: false, underline: false}
+  name: text_box_1
+  layout_properties: {grid_position: 'NXQBDC,BDJBZC'}
+  event_bindings: {pressed_enter: text_box_1_pressed_enter}
+- type: Spacer
+  properties: {height: 32}
+  name: spacer_1
+  layout_properties: {grid_position: 'NXQBDC,JMTGOF'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Weather Forecast, font_size: null, font: '', spacing_above: large, icon_align: left,
+    spacing_below: medium, italic: false, background: '', bold: false, underline: false,
+    icon: 'fa:cloud'}
+  name: label_1
+  layout_properties: {grid_position: 'YPCYFQ,DMFMNS'}
+- type: ColumnPanel
+  properties: {role: card, col_widths: '{}'}
+  name: card_1
+  layout_properties: {grid_position: 'NFTXJM,BFYSLA'}
+  components:
+  - type: TextArea
+    properties: {height: 394}
+    name: text_weather_info
+    layout_properties: {grid_position: 'CSKSMA,SOAGZG'}
 is_package: true
