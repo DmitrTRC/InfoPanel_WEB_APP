@@ -12,12 +12,13 @@ class FormWeather(FormWeatherTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.weather_url = 'https://wttr.in/'
+    self._weather_url = 'https://wttr.in/'
+    self._weather_format = '?2AF'
 
     # Any code you write here will run before the form opens.
 
   def get_weather(self):     
-    weather_request =  self.weather_url + self.text_box_1.text
+    weather_request =  self._weather_url + self.text_box_1.text + self._weather_format
     weather_response = rq.request(weather_request)
     return weather_response.get_bytes()
 
