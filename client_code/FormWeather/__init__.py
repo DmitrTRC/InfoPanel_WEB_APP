@@ -19,7 +19,7 @@ class FormWeather(FormWeatherTemplate):
   def text_box_1_pressed_enter(self, **event_args):
     print(f'Received new location : {self.text_box_1.text}')
     weather_request =  self.weather_url + self.text_box_1.text
-    weather_response = rq.request(weather_request)
+    weather_response = rq.request(weather_requestб, json=True)
     print(f'Content type = {weather_response.content_type}')
     self.text_weather_info.text = weather_response.get_bytes()
 
