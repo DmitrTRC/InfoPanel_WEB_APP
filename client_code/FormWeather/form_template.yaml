@@ -36,7 +36,12 @@ components:
   name: label_1
   layout_properties: {grid_position: 'YPCYFQ,DMFMNS'}
 - type: ColumnPanel
-  properties: {role: card}
+  properties: {role: card, col_widths: '{}'}
   name: card_1
   layout_properties: {grid_position: 'NFTXJM,BFYSLA'}
+  components:
+  - type: TextArea
+    properties: {height: 394}
+    name: text_weather_info
+    layout_properties: {grid_position: 'CSKSMA,SOAGZG'}
 is_package: true
