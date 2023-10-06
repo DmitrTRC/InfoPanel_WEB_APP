@@ -16,15 +16,15 @@ class FormWeather(FormWeatherTemplate):
 
     # Any code you write here will run before the form opens.
 
-  def text_box_1_pressed_enter(self, **event_args):
-    print(f'Received new location : {self.text_box_1.text}')
+  def get_weather(self):     
     weather_request =  self.weather_url + self.text_box_1.text
-    weather_response = rq.request(weather_requestб, json=True)
-    print(f'Content type = {weather_response.content_type}')
-    self.text_weather_info.text = weather_response.get_bytes()
+    weather_response = rq.request(weather_request)
+    return weather_response
 
-  def text_box_1_focus(self, **event_args):
-    """This method is called when the TextBox gets focus"""
-    pass
+  def text_box_1_pressed_enter(self, **event_args):
+    self.text_area_weather.text
+    self.text_area_weather.text = self.get_weather().get_bytes
 
+
+  
 
