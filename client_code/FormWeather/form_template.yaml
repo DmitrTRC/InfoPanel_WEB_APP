@@ -35,8 +35,8 @@ components:
     icon: 'fa:cloud'}
   name: label_1
   layout_properties: {grid_position: 'YPCYFQ,DMFMNS'}
-- type: TextArea
+- type: RichText
   properties: {}
-  name: text_area_weather
-  layout_properties: {grid_position: 'VMGEUT,EYNWOG'}
+  name: rich_text_weather
+  layout_properties: {grid_position: 'BDZMAM,RQHIOM'}
 is_package: true
