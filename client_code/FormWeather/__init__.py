@@ -27,7 +27,7 @@ class FormWeather(FormWeatherTemplate):
     print (f'Raw response: {info}')
     report = ''
     for item in info:
-      report += item 
+      report += ( item + '\n' )
       
     self.rich_text_weather.content = report
     
