@@ -56,3 +56,8 @@ db_schema:
       admin_ui: {width: 200, order: 8}
       type: bool
     title: Users
+  columns:
+    client: none
+    server: full
+    columns: []
+    title: columns
