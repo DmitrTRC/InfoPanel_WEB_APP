@@ -59,5 +59,8 @@ db_schema:
   columns:
     client: none
     server: full
-    columns: []
-    title: columns
+    columns:
+    - name: Task Name
+      admin_ui: {width: 200}
+      type: string
+    title: Columns
