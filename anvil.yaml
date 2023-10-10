@@ -63,4 +63,8 @@ db_schema:
     - name: Task Name
       admin_ui: {width: 200}
       type: string
+    - name: Assigned to
+      admin_ui: {width: 200, order: 1}
+      type: link_single
+      target: users
     title: Columns
