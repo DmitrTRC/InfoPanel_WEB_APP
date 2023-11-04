@@ -6,6 +6,7 @@ import anvil.users
 
 from ._anvil_designer import FormWeatherTemplate
 from anvil import *
+import anvil.server
 from anvil.google.drive import app_files
 from anvil.tables import app_tables
 

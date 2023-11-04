@@ -5,7 +5,8 @@ unique_ids:
   modules:
     FormWeather.utils: CWB5A3KLVPG7M2A4IUN5UOTJ6KT7F4MT
     FormWeather.utils.report: K4YCP2MCYZNNYTS4HD2FKWTZE2AYF574
-  server_modules: {}
+  server_modules:
+    ServerModule1: '1699135084591147851890690.78485'
   assets:
     military (2).png: '1696321909320325088612169.1254'
     standard-page.html: 5W32GNKDT65WZPHPPGH4Y35GALWIXA4R
