@@ -1,3 +1,4 @@
+import anvil.server
 def format_weather_report(report_json) -> str:
     current_condition = report_json['current_condition'][0]
     location = report_json['nearest_area'][0]
