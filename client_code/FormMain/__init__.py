@@ -1,4 +1,4 @@
-from ._anvil_designer import Form1Template
+from ._anvil_designer import FormMainTemplate
 from anvil import *
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
@@ -8,9 +8,10 @@ from anvil.tables import app_tables
 import anvil.users
 
 from ..FormWeather import FormWeather
+from ..FormTasks import FormTasks
 
 
-class Form1(Form1Template):
+class FormMain(FormMainTemplate):
     def __init__(self, **properties):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
@@ -22,3 +23,10 @@ class Form1(Form1Template):
         weather_panel = FormWeather()
         get_open_form().content_panel.clear()
         get_open_form().content_panel.add_component(weather_panel)
+
+    def link_tasks_click(self, **event_args):
+      task_panel = FormTasks()
+      get_open_form().content_panel.clear()
+      get_open_form().content_panel.add_component(task_panel)
+
+    

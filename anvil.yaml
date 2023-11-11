@@ -14,13 +14,14 @@ services:
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
+startup: {type: form, module: FormMain}
 package_name: InfoPanel
 allow_embedding: false
 name: InfoPanel
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
 metadata: {title: Info Panel, description: Home automation and tasks management, logo_img: 'asset:military
     (2).png'}
-startup_form: Form1
+startup_form: null
 native_deps: {head_html: '<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;600&family=Roboto+Condensed:wght@300;400;700&display=swap"
     rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">'}
 db_schema:

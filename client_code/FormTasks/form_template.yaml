@@ -1,0 +1,26 @@
+container:
+  type: ColumnPanel
+  properties: {visible: true, col_widths: '{}'}
+components:
+- name: drop_down_tasks_type
+  properties:
+    items: [Backlog, Todo, Test, Done]
+  type: DropDown
+  layout_properties: {grid_position: 'XJPTEK,PZKWDU'}
+  data_bindings:
+  - {property: selected_value, code: 'self.item[''''] = ''Backlog''', writeback: false}
+- name: data_grid_1
+  properties:
+    columns:
+    - {id: JKSDUP, title: Backlog, data_key: column_1}
+    - {id: VJQQOR, title: ToDo, data_key: column_2}
+    - {id: OJLQEN, title: Test, data_key: column_3}
+    - {id: JZTMRY, data_key: column_4, title: Done}
+    spacing_above: medium
+  type: DataGrid
+  components:
+  - name: repeating_panel_1
+    properties: {item_template: FormTasks.RowTemplate2}
+    type: RepeatingPanel
+  layout_properties: {grid_position: 'MJMAFI,TCHUTN'}
+is_package: true
