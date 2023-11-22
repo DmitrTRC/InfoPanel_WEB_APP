@@ -11,6 +11,6 @@ import requests
 
 
 @anvil.server.callable
-def get_tasks_all(priority):
+def get_tasks_all():
     pass
 
